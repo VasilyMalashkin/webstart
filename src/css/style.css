@@ -132,6 +132,7 @@ img {
   margin-left: 30px;
   color: #333333;
   font-size: 13px;
+  outline: none;
   font-family: 'Museo Sans Bold', serif;
   font-weight: 700;
 }
@@ -316,6 +317,7 @@ img {
   color: #999999;
   margin-bottom: 30px;
   width: 240px;
+  outline: none;
 }
 
 .offer__input:first-child {
@@ -327,6 +329,7 @@ img {
   width: 100%;
   min-height: 70px;
   margin-bottom: 26px;
+  outline: none;
   font-family: 'Museo Sans Bold', serif;
   font-weight: 700;
 }
