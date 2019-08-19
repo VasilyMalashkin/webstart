@@ -87,10 +87,6 @@ img {
 }
 
 /*Импорт стилей шапки*/
-.navbar {
-  /*padding: 2px 0*/
-}
-
 .navbar-block {
   display: -webkit-box;
   display: -ms-flexbox;
