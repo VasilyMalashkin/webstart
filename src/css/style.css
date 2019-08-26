@@ -390,8 +390,17 @@ img {
 
 .modal-dialog {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
-  max-width: 450px;
+  max-width: 550px;
   width: 90%;
   min-width: 200px;
   background: #fff;
@@ -406,5 +415,67 @@ img {
 
 .modal-dialog__close:hover {
   cursor: pointer;
+}
+
+.modal-block {
+  padding: 40px 70px;
+}
+
+.modal__title {
+  color: #333333;
+  max-width: 400px;
+  line-height: 35px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: 'Museo Sans Bold', serif;
+  font-weight: 700;
+}
+
+.modal__subtitle {
+  color: #333333;
+  width: 100%;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.modal__input {
+  color: #999999;
+  margin-bottom: 30px;
+  width: 100%;
+  outline: none;
+}
+
+.modal__input:first-child {
+  margin-bottom: 15px;
+}
+
+.modal__button {
+  color: #333333;
+  width: 100%;
+  min-height: 70px;
+  margin-bottom: 26px;
+  outline: none;
+  font-family: 'Museo Sans Bold', serif;
+  font-weight: 700;
+}
+
+.modal__contacts {
+  text-align: center;
+}
+
+.modal__text {
+  color: #333333;
+  width: 100%;
+  line-height: 24px;
+}
+
+.modal__phone {
+  display: inline-block;
+  color: #333333;
+  font-size: 25px;
+  margin-top: 5px;
+  text-decoration: none;
+  font-family: 'Museo Sans Bold', serif;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */

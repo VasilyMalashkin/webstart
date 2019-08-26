@@ -10,8 +10,11 @@
     display: flex
   &-dialog
     position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center    
     margin: auto    
-    max-width: 450px
+    max-width: 550px
     width: 90%
     min-width: 200px
     background: #fff
@@ -22,3 +25,45 @@
       right: 0
       &:hover    
         cursor: pointer
+  &-block 
+    padding: 40px 70px
+  &__title 
+    color: $text-color
+    max-width: 400px
+    line-height: 35px
+    margin-bottom: 40px
+    text-align: center
+    +bold
+  &__subtitle
+    color: $text-color
+    width: 100%
+    margin-bottom: 40px
+    text-align: center    
+  &__input    
+    color: $input-color
+    margin-bottom: 30px
+    width: 100%
+    outline: none
+    &:first-child
+      margin-bottom: 15px
+  &__button
+    color: $text-color
+    width: 100%
+    min-height: 70px
+    margin-bottom: 26px
+    outline: none
+    +bold
+  &__contacts 
+    text-align: center
+  &__text 
+    color: $text-color
+    width: 100%
+    line-height: 24px    
+  &__phone
+    display: inline-block    
+    color: $text-color
+    font-size: 25px 
+    margin-top: 5px         
+    text-decoration: none
+    +bold
+
