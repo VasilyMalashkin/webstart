@@ -409,6 +409,14 @@ img {
   outline: none;
 }
 
+.slick-slide {
+  margin: 0 20px;
+}
+
+.slick-list {
+  margin: 0 -20px;
+}
+
 /*Стили для блока price*/
 .price__title {
   margin: auto;
