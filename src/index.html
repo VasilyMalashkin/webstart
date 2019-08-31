@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/hover-min.css">          
     <link rel="stylesheet" href="css/style.css">    
   </head>
   <body>
@@ -22,12 +23,12 @@
           <div class="navbar__info">
             <div class="navbar__contacts">
               <span class="navbar__address">Калуга, Москва, МО</span>
-              <a href="tel:+7(495)42-251-31" class="navbar__phone">
+              <a href="tel:+7(495)42-251-31" class="navbar__phone hvr-underline-reveal">
                 +7 (495) 42-251-31
               </a>
             </div>
             <!-- /.navbar__contacts -->
-            <button class="button navbar__button" id="button">Перезвоните мне</button>
+            <button class="button navbar__button hvr-glow" id="button">Перезвоните мне</button>
           </div>
           <!-- /.navbar__info -->
         </div>
@@ -44,10 +45,10 @@
         <div class="container">
           <div class="hero-block">
             <div class="hero-text">
-              <h1 class="hero-text__title">
+              <h1 class="hero-text__title wow fadeIn" data-wow-delay="1.5s" data-wow-duration="2s" data-wow-offset="8">
                 Внутренняя отделка помещений "под ключ"
               </h1>
-              <span class="hero-text__subtitle">
+              <span class="hero-text__subtitle wow fadeIn" data-wow-delay="1.5s" data-wow-duration="2s" data-wow-offset="8">
                 с гарантией качества, прописанной в договоре
               </span>
               <ul class="hero-list">
@@ -55,19 +56,19 @@
                   <div class="hero-list__image">
                     <img src="img/hero/clock.png" alt="clock">
                   </div>
-                  <span class="hero-list__text">Точно соблюдаем сроки</span>
+                  <span class="hero-list__text wow fadeInUp" data-wow-delay="2s">Точно соблюдаем сроки</span>
                 </li>
                 <li class="hero-list__item">
                   <div class="hero-list__image">
                     <img src="img/hero/calculator.png" alt="calculator">
                   </div>
-                  <span class="hero-list__text">Рассчитываем смету на работы <br>и материалы в день обращения</span>
+                  <span class="hero-list__text wow fadeInUp" data-wow-delay="2.5s">Рассчитываем смету на работы <br>и материалы в день обращения</span>
                 </li>
                 <li class="hero-list__item">
                   <div class="hero-list__image">
                     <img src="img/hero/paint-board.png" alt="paint-board">
                   </div>
-                  <span class="hero-list__text">Предложим более 100 вариантов исполнения дизайна Вашего жилья</span>
+                  <span class="hero-list__text wow fadeInUp" data-wow-delay="3s">Предложим более 100 вариантов исполнения дизайна Вашего жилья</span>
                 </li>
               </ul>
             </div>
@@ -98,7 +99,7 @@
             <form action="#" id="offer-form" class="form offer__form">
               <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
               <input type="tel" name="userphone" class="input offer__input" placeholder="Ваш телефон">
-              <button class="button offer__button">Получить бесплатный дизайн-проект</button>
+              <button class="button offer__button hvr-glow">Получить бесплатный дизайн-проект</button>
             </form>
             <div class="success"></div>
             <!-- /.form offer__form -->
@@ -107,7 +108,7 @@
                 Наш менеджер перезвонит Вам в течение 60 секунд
               </span>
               <span class="section-text offer__text">
-                или перезвоните нам сами<br><a href="tel:+7(495)42-251-31" class="offer__phone">+7 (495) 42-251-31</a>
+                или перезвоните нам сами<br><a href="tel:+7(495)42-251-31" class="offer__phone hvr-underline-reveal">+7 (495) 42-251-31</a>
               </span>
             </div>
             <!-- /.section-text -->
@@ -137,11 +138,11 @@
             <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.jpg" alt=""></div>
             <!-- /.slider__item -->
           </div>
-          <div class="arrows portfolio__arrows">
-            <div class="arrows__left">
+          <div class="arrows portfolio__arrows">            
+            <div class="arrows__left hvr-backward">
                 <img src="img/portfolio/left-arrow.png" alt="">
-            </div>
-            <div class="arrows__right">
+            </div>            
+            <div class="arrows__right hvr-forward">
               <img src="img/portfolio/right-arrow.png" alt="">
             </div>
           </div>
@@ -256,7 +257,7 @@
           <!-- .steps-block>.step*5>.step__image+p.step__text|c -->
 
           <div class="steps-block">
-            <div class="step">
+            <div class="step wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1.5s" data-wow-offset="10">
               <div class="step__image">
                 <img src="img/steps/woman-with-headset.png" alt="">
               </div>
@@ -264,7 +265,7 @@
               <p class="step__text">Вы звоните нам или оставляете заявку</p>
               <!-- /.step__text -->
             </div>
-            <div class="step">
+            <div class="step wow fadeInUp" data-wow-delay="1s" data-wow-duration="2s" data-wow-offset="10">
               <div class="step__image">
                 <img src="img/steps/wall-clock.png" alt="">
               </div>
@@ -272,7 +273,7 @@
               <p class="step__text">Согласуем удобное для Вас время выезда специалиста на замер</p>
               <!-- /.step__text -->
             </div>
-            <div class="step">
+            <div class="step wow fadeInUp" data-wow-delay="1.5s" data-wow-duration="2.5s" data-wow-offset="10">
               <div class="step__image">
                 <img src="img/steps/money.png" alt="">
               </div>
@@ -280,7 +281,7 @@
               <p class="step__text">Рассчитываем смету и согласовываем с Вами</p>
               <!-- /.step__text -->
             </div>
-            <div class="step">
+            <div class="step wow fadeInUp" data-wow-delay="2s" data-wow-duration="3s" data-wow-offset="10">
               <div class="step__image">
                 <img src="img/steps/folded-document-icon.png" alt="">
               </div>
@@ -288,7 +289,7 @@
               <p class="step__text">Подписываем договор и закупаем материал по оптовым ценам</p>
               <!-- /.step__text -->
             </div>
-            <div class="step">
+            <div class="step wow fadeInUp" data-wow-delay="2.5s" data-wow-duration="3.5s" data-wow-offset="10">
               <div class="step__image">
                 <img src="img/steps/calendar.png" alt="">
               </div>
@@ -325,7 +326,7 @@
           <form action="" class="form modal__form">
             <input type="text" name="username" class="input modal__input" placeholder="Ваше имя">
             <input type="tel" name="userphone" class="input modal__input" placeholder="Ваш телефон">            
-            <button class="button modal__button">Узнать стоимость</button>
+            <button class="button modal__button hvr-glow">Узнать стоимость</button>
           </form>
           <!-- /.form modal__form -->
           <div class="modal__contacts">

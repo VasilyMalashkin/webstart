@@ -88,6 +88,11 @@ img {
   border-radius: 10px;
 }
 
+.input:focus {
+  background: #ffe;
+  border: 1px solid #29B0D9;
+}
+
 .arrows__left:hover, .arrows__right:hover {
   cursor: pointer;
 }
@@ -390,15 +395,15 @@ img {
 }
 
 .portfolio__arrows {
-  max-width: 120px;
+  /*max-width: 150px*/
   margin: auto;
   margin-top: 68px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .slider__image {
@@ -415,6 +420,14 @@ img {
 
 .slick-list {
   margin: 0 -20px;
+}
+
+.arrows__right {
+  margin-left: 15px;
+}
+
+.arrows__left {
+  margin-right: 15px;
 }
 
 /*Стили для блока price*/
