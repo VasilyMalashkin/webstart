@@ -344,7 +344,7 @@
                 <input type="text" name="username2" class="input brif__input" placeholder="Ваше имя">
                 <input type="tel" name="phone2" class="input brif__input phone" placeholder="Ваш телефон">
                 <input type="email" name="email" class="input brif__input" placeholder="Ваш email">
-                <button class="button brif__button hvr-glow">Узнать стоимость</button>
+                <button class="button brif__button hvr-glow">Рассчитать стоимость</button>
                 <span class="form__description">Мы перезвоним Вам в течение 60 секунд</span>
               </form>
 
@@ -361,6 +361,46 @@
 
     </main>
     <!-- /.main -->
+
+    <footer class="footer">
+      <div class="map" id="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4a050975e2d54a039f8b2abe6a2365c05379965ab28f636a0c16e4cb46df1101&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>
+      </div>
+      <div class="container">
+        <div class="contacts-block">
+          <div class="contacts">
+            <h3 class="contacts__title">Приезжайте к нам в гости! Проконсультируем Вас по всем вопросам ремонта</h3>
+
+            <!-- ul.contacts-list>li.contacts-list__item*3>span.contacts-list__icon+span.contacts-list__text -->
+
+            <ul class="contacts-list">
+              <li class="contacts-list__item">
+                <span class="contacts-list__icon">
+                  <img src="img/footer/map-placeholder.png" alt="">
+                </span>
+                <span class="contacts-list__text">г. Москва, <br> <b>посёлок Толстопальцево,</b> <br> <b>ул. Ленина, д. 10, корпус 2, оф. 308</b></span>
+              </li>
+              <li class="contacts-list__item">
+                <span class="contacts-list__icon">
+                  <img src="img/footer/clock-with-white-face.png" alt="">
+                </span>
+                <span class="contacts-list__text">Режим работы: <br> <b>с 9:00 до 18:00</b></span>
+              </li>
+              <li class="contacts-list__item">
+                <span class="contacts-list__icon">
+                  <img src="img/footer/phone-call-button.png" alt="">
+                </span>
+                <span class="contacts-list__text">Телефон: <br>
+                  <a href="tel:+7(495)42-251-31" class="contacts-list__phone hvr-underline-reveal">+7 (495) 42-251-31</a></span>
+              </li>
+            </ul>
+
+          </div>
+          <!-- /.contacts -->
+        </div>
+        <!-- /.contacts-block -->
+      </div>
+    </footer>
 
     <div class="modal" id="modal">
       <div class="modal-dialog">

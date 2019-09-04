@@ -86,6 +86,8 @@ form
 
 @media (max-width: 1200px)
   .brif
+    background-repeat: repeat-y, no-repeat
+    background-size: 50% 100%, cover
     &__form
       padding-left: 30px
   .interview
@@ -115,5 +117,23 @@ form
     background-repeat: repeat-x, no-repeat
     &-block 
       flex-direction: column
+    &__interview
+      margin: auto      
+      max-width: 450px
+      padding-right: 0        
     &__form
-      margin-top: 80px
+      margin: auto
+      margin-top: 220px
+      max-width: 450px
+      padding-left: 0
+    &__input
+      width: 90%
+      max-width: 90%
+    &__button      
+      width: 90%
+      max-width: 90%
+  .interview
+    &-list
+      &__text
+        max-width: 200px
+
