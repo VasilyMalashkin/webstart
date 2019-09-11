@@ -14,19 +14,23 @@
     justify-content: space-between
     align-items: center    
     margin: auto    
-    max-width: 550px
+    max-width: 570px
     width: 90%
     min-width: 200px
-    background: #fff
-    padding: 40px
+    background: #fff    
     &__close
       position: absolute
-      top: 0
-      right: 0
+      top: 12px
+      right: 12px
+      outline: none
+      border: none
+      border-radius: 5px
+      background-color: $secondary
       &:hover    
+        background-color: lighten($secondary, 10%)
         cursor: pointer
   &-block 
-    padding: 40px 50px    
+    padding: 74px 100px       
   &__title 
     color: $text-color
     max-width: 400px
@@ -78,4 +82,76 @@ form
     top: 145px
     left: 28px
     border: none
+
+@media (max-width: 1200px)
+  .modal
+    &-dialog
+      max-width: 417px
+    &-block
+      padding: 54px 37px 33px 39px
+    &__title
+      margin: 0 0 40px
+
+@media (max-width: 768px)
+  .modal
+    &__title
+      font-size: 18px
+      line-height: 25px
+    &__subtitle
+      font-size: 14px
+      line-height: 26px
+
+@media (max-width: 567px)
+  .modal
+    &-dialog
+        max-width: 410px
+    &-block
+      padding: 34px 50px 34px 49px
+    &__title
+      margin: 0 0 20px
+    &__subtitle
+      margin: 0 0 20px
+    &__button
+      font-size: 14px
+
+@media (max-width: 420px)
+  .modal
+    &-dialog
+        max-width: 277px
+    &-block
+      padding: 34px 50px 
+    &__title
+      margin: 0 0 10px
+      font-size: 13px
+      line-height: 24px
+    &__subtitle
+      margin: 0 0 22px
+      font-size: 11px
+      line-height: 16px
+    &__text
+      font-size: 12px
+      line-height: 15px
+    &__phone
+      font-size: 18px
+    &__input
+      padding: 15px 0 15px 23px
+    &__button
+      font-size: 12px
+      padding: 15px 0
+      min-height: 49px
+  form
+    position: relative     
+    #username3-error
+      position: absolute
+      font-size: 12px
+      top: 49px
+      left: 26px
+      border: none
+    #phone3-error
+      position: absolute
+      font-size: 12px
+      top: 112px
+      left: 26px
+      border: none
+    
 

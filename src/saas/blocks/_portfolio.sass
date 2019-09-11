@@ -2,13 +2,19 @@
   background: $secondary url('../img/portfolio/portfolio-pattern.jpg') repeat-y center left
   background-size: 50%
   &__title    
+    color: $text-color     
+    font-size: 30px
+    line-height: 45px
     margin: auto
-    margin-bottom: 100px
+    margin-bottom: 100px    
   &__arrows    
     margin: auto
     margin-top: 68px
     display: flex
-    justify-content: center            
+    justify-content: center     
+.section  
+  &-title 
+    max-width: 800px       
 .slider 
   &__image
     margin: auto
@@ -26,5 +32,12 @@
 .arrows
   &__left
     margin-right: 15px
-    
+
+@media (max-width: 768px)
+  .portfolio      
+    background: $secondary none
+    &__title
+      font-size: 18px
+      line-height: 1.2
+      margin-bottom: 40px
 

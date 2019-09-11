@@ -48,13 +48,14 @@
     &-list
       margin-bottom: 44px
     &-text
-      padding-right: 10px
-@media (max-width: 768px)
+      padding-right: 0px
+@media (max-width: 768px)  
   .hero
+    padding: 25px 0 40px
     &-text
       &__title 
         font-size: 24px
-        line-height: 1.4
+        line-height: 1.2
         margin-bottom: 15px
       &__subtitle
         font-size: 16px
@@ -63,9 +64,24 @@
       &__item 
         margin-bottom: 20px
       &__text
-        font-size: 12px
+        font-size: 14px
+        width: 100%
+        line-height: 16px        
       &__image
         margin-right: 15px
 
+@media (max-width: 567px)
+  .hero    
+    &-text      
+      &__title 
+        font-size: 22px
+        line-height: 27px
+        margin-bottom: 9px
+        letter-spacing: .1px
+    &-list
+      &__text  
+        font-size: 12px      
+        max-width: 210px
+        line-height: 16px
 
       

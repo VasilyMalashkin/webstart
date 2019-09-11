@@ -50,7 +50,7 @@
     color: $text-color
     font-size: 15px    
     text-decoration: none
-    +bold    
+    +bold   
 form
   position: relative     
   #username1-error
@@ -69,9 +69,27 @@ form
     background-size: cover   
     &__input
       width: 100%
-      margin-bottom: 10px
+      margin-bottom: 17px      
     &__button
       font-size: 13px
+      margin-top: 15px
+    &__title
+      font-size: 20px
+    &__text
+      &__phone
+        margin-top: 7px
+  form
+    position: relative     
+    #username1-error
+      position: absolute
+      top: 64px
+      left: 28px
+      border: none
+    #phone1-error
+      position: absolute
+      top: 145px
+      left: 28px
+      border: none
 @media (max-width: 768px)
   .offer
     background: #fff
@@ -80,4 +98,14 @@ form
       width: 100%
       max-width: 500px
       padding-right: 0
-    
+    &__title
+      font-size: 18px
+      line-height: 1.2
+    &__subtitle
+      font-size: 14px
+      line-height: 1.2
+    &__text
+      &__phone
+        margin-top: 7px
+
+
