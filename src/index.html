@@ -363,9 +363,10 @@
     <!-- /.main -->
 
     <footer class="footer">
-      <div class="map" id="map">
-        <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4a050975e2d54a039f8b2abe6a2365c05379965ab28f636a0c16e4cb46df1101&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>
-      </div>
+      <div class="ymap-container">
+        <div class="loader loader-default"></div>
+        <div id="map-yandex"></div>
+      </div><!-- .ymap-container -->      
       <div class="container">
         <div class="contacts-block">
           <div class="contacts">
@@ -436,6 +437,7 @@
 
     <!-- <script src="js/main.js"></script> -->
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/map.min.js"></script>    
     <script src="js/modal.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/slick.min.js"></script>

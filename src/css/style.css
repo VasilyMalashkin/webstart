@@ -6645,6 +6645,111 @@ form #email-error {
   }
 }
 
+/*Стили для блока Карты*/
+.ymap-container {
+  position: absolute;
+  width: 50%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  cursor: pointer;
+  background: url("/src/img/footer/maploader.jpg") #ffffff no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#map-yandex {
+  position: relative;
+  z-index: 7;
+  width: 100%;
+  height: 640px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/*Индикатор загрузки, который показывается до загрузки карты*/
+.loader {
+  position: absolute;
+  z-index: 15;
+  top: -100%;
+  left: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #000000;
+  -webkit-transition: opacity .7s ease;
+  transition: opacity .7s ease;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.loader:after,
+.loader:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.loader.is-active {
+  top: 0;
+  opacity: 1;
+}
+
+.loader-default:after {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  width: 48px;
+  height: 48px;
+  content: '';
+  -webkit-animation: rotation 1s linear infinite;
+  -webkit-animation-animation: rotation 1s linear infinite;
+  border: solid 8px #ffffff;
+  border-left-color: transparent;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0);
+    -webkit-transform-transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    -webkit-transform-transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0);
+    -webkit-transform-transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    -webkit-transform-transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes blink {
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /*Стили модального окна*/
 .modal {
   position: fixed;
